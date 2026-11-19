@@ -1,0 +1,264 @@
+{
+  "included": [
+    "tests/approval-boundary.test.mjs",
+    "tests/cli-adapter.test.mjs",
+    "tests/cli-process.test.mjs",
+    "tests/collection-operation.test.mjs",
+    "tests/collection-operational.test.mjs",
+    "tests/collection.test.mjs",
+    "tests/diagnostic-exception.test.mjs",
+    "tests/diagnostic-protocol.test.mjs",
+    "tests/diagnostic-readiness.test.mjs",
+    "tests/draft-style.test.mjs",
+    "tests/drafting-accounting.test.mjs",
+    "tests/drafting-caller.test.mjs",
+    "tests/drafting-handoff.test.mjs",
+    "tests/drafting-quality.test.mjs",
+    "tests/drafting-session.test.mjs",
+    "tests/first-touch-handoff.test.mjs",
+    "tests/first-touch-local-paths.test.mjs",
+    "tests/first-touch-render.test.mjs",
+    "tests/first-touch-writing.test.mjs",
+    "tests/foundation.test.mjs",
+    "tests/handoff-production.test.mjs",
+    "tests/instantly-contract-discovery.test.mjs",
+    "tests/instantly-diagnostic.test.mjs",
+    "tests/instantly-discovery-authority.test.mjs",
+    "tests/instantly-discovery-binding.test.mjs",
+    "tests/instantly-discovery-concurrency.test.mjs",
+    "tests/instantly-result-validation.test.mjs",
+    "tests/local-maintenance.test.mjs",
+    "tests/manual-response-operator.test.mjs",
+    "tests/manual-response.test.mjs",
+    "tests/monitoring-delivery.test.mjs",
+    "tests/monitoring-provider.test.mjs",
+    "tests/monitoring.test.mjs",
+    "tests/operational-health.test.mjs",
+    "tests/operator-readiness.test.mjs",
+    "tests/operator.test.mjs",
+    "tests/outreach-csv.test.mjs",
+    "tests/outreach-preview.test.mjs",
+    "tests/readiness-cleanup.test.mjs",
+    "tests/refinement-offline.test.mjs",
+    "tests/refinement-store.test.mjs",
+    "tests/refinement.test.mjs",
+    "tests/single-message-decision.test.mjs",
+    "tests/telegram-consumer.test.mjs",
+    "tests/telegram-credential-cleanup.test.mjs",
+    "tests/telegram-decisions.test.mjs",
+    "tests/telegram-local.test.mjs",
+    "tests/telegram-network-diagnostics.test.mjs",
+    "tests/telegram-pairing.test.mjs",
+    "tests/telegram-transport.test.mjs",
+    "tests/telegram-writing-adapter.test.mjs",
+    "tests/telegram-writing-authority.test.mjs",
+    "tests/telegram-writing-budget.test.mjs",
+    "tests/telegram-writing-decisions.test.mjs",
+    "tests/workflow-integrated.test.mjs",
+    "tests/workflow-jobs.test.mjs",
+    "tests/workflow-observation.test.mjs",
+    "tests/workflow-operational-runtime.test.mjs",
+    "tests/workflow-runtime.test.mjs",
+    "tests/workflow.test.mjs",
+    "tests/writing.test.mjs"
+  ],
+  "schemaVersion": 1,
+  "excluded": [
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/acceptance-authority.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/acceptance-continuation-authority.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/acceptance-continuation-instantly.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/acceptance-continuation-telegram.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/acceptance-controller.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/acceptance-guidance.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/acceptance-instantly.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/acceptance-remaining.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/acceptance-telegram.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/app-server-offline.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/contract-schema-diagnostics.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/diagnostic-client.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/diagnostic-owner.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/diagnostic-provenance.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/handoff-production-runtime.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/handoff.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/import.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/instantly-advertised-requests.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/instantly-discovery-entry.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/instantly-internal-pilot.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/instantly-observed-reply.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/instantly-pilot-authority.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/instantly-pilot-dispatch-redaction.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/instantly-pilot-host.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/instantly-pilot-resume.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/instantly-pilot-session.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/instantly-pilot-setup.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/instantly-qa-authority.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/instantly-qa-command.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/instantly-qa-provider.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/instantly-qa-v2-authorization.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/instantly-qa-v2-binding.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/instantly-qa-v2-cli.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/instantly-qa-v2-concurrency.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/instantly-qa-v2-open-refusal.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/instantly-qa-v2-provider.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/observer-deadline.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/operational-replies.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/refinement-saved.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/telegram-continuation.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/telegram-details-procedure.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/telegram-live-test.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/telegram-pending-inspection.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/telegram-writing-live.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/telegram-writing-render.test.mjs"
+    },
+    {
+      "reason": "Historical acceptance or private saved evidence dependency; retained locally, not represented as passing portable coverage.",
+      "path": "tests/writing-saved.test.mjs"
+    },
+    {
+      "path": "tests/recovery.test.mjs",
+      "reason": "Reads private historical import/captured-contract evidence, excluded from portable suite."
+    },
+    {
+      "path": "tests/single-message-contract.test.mjs",
+      "reason": "Reads private historical import/captured-contract evidence, excluded from portable suite."
+    },
+    {
+      "path": "tests/workflow-acceptance.test.mjs",
+      "reason": "Reads private historical import/captured-contract evidence, excluded from portable suite."
+    }
+  ]
+}

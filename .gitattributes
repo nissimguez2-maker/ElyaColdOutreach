@@ -1,0 +1,3 @@
+# Preserve byte-identical sources and captured schema fixtures used in hash pins.
+# Do not silently normalize line endings during checkout/publication.
+* -text

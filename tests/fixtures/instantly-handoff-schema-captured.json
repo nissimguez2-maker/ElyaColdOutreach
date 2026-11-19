@@ -1,0 +1,18 @@
+{
+  "sourceRef": "work/instantly-capability-inspection.json",
+  "schemas": [
+    {
+      "name": "mcp__codex_apps__instantly_ai_create_lead",
+      "schema": "exec tool declaration:\n```ts\ndeclare const tools: { mcp__codex_apps__instantly_ai_create_lead(args: {\n  // Campaign ID to add the lead to\n  campaign?: string;\n  // Lead company name\n  company_name?: string;\n  // Lead email address\n  email: string;\n  // Lead first name\n  first_name?: string;\n  // Lead last name\n  last_name?: string;\n  // Lead list ID to add the lead to\n  list_id?: string;\n  // Lead phone number\n  phone?: string;\n  // Lead website URL\n  website?: string;\n}): Promise<CallToolResult<{ [key: string]: unknown; }>>; };\n```"
+    },
+    {
+      "name": "mcp__codex_apps__instantly_ai_update_lead",
+      "schema": "exec tool declaration:\n```ts\ndeclare const tools: { mcp__codex_apps__instantly_ai_update_lead(args: {\n  // User ID to assign the lead to\n  assigned_to?: string;\n  // Company name of the lead\n  company_name?: string;\n  // Custom variables to merge into the lead, e.g. {\"past_customer\":true}. Keys new to the campaign are registered on it automatically.\n  custom_variables?: { [key: string]: string | number | boolean | null; };\n  // First name of the lead\n  first_name?: string;\n  // Lead ID to update\n  id: string;\n  // Job title of the lead. Cannot be combined with a jobTitle/job_title key inside custom_variables.\n  job_title?: string;\n  // Last name of the lead\n  last_name?: string;\n  // Lead interest status value\n  lt_interest_status?: number;\n  // Personalization of the lead\n  personalization?: string;\n  // Phone number of the lead\n  phone?: string;\n  // Potential value of the lead\n  pl_value_lead?: string;\n  // Website of the lead\n  website?: string;\n}): Promise<CallToolResult<{ [key: string]: unknown; }>>; };\n```"
+    },
+    {
+      "name": "mcp__codex_apps__instantly_ai_get_lead",
+      "schema": "exec tool declaration:\n```ts\ndeclare const tools: { mcp__codex_apps__instantly_ai_get_lead(args: {\n  // Lead ID\n  id: string;\n}): Promise<CallToolResult<{ [key: string]: unknown; }>>; };\n```"
+    }
+  ],
+  "sourceSha256": "8af1c9a10f266abd06ffddf3aa68a20d2df4d6e2bcd93e09a25b6f23dce9a1d3"
+}

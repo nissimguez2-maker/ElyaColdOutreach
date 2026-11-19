@@ -1,0 +1,46 @@
+# Local records and evidence stay on this machine. Never force-add these.
+/data/
+/outputs/
+/work/**
+# Existing implementation lives at these paths; retain paths to preserve pins.
+!/work/connector-compatibility/
+!/work/connector-compatibility/owner.ps1
+!/work/containment-proof/
+!/work/containment-proof/Job.cs
+# Historical operational documents remain local evidence.
+/docs/**
+!/docs/ARCHITECTURE.md
+!/docs/PUBLICATION.md
+!/docs/SCHEMA.md
+!/docs/TESTING.md
+!/docs/ACCEPTANCE-EVIDENCE.md
+!/docs/CONFIGURATION.md
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.bak
+*.log
+*.tap
+.env
+.env.*
+!.env.example
+*.dpapi
+*.pem
+*.key
+*.pfx
+*.p12
+*.session
+node_modules/
+.venv/
+venv/
+__pycache__/
+.cache/
+coverage/
+dist/
+build/
+.codex/
+.agents/
+.aws/
+.vscode/
+.DS_Store

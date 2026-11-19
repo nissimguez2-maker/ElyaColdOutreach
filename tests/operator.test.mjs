@@ -1,0 +1,32 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {mkdtempSync} from 'node:fs';import {join} from 'node:path';import {tmpdir} from 'node:os';import {spawnSync} from 'node:child_process';
+import {openStore,putRecord,controls} from '../src/store.mjs';
+import {writeFileSync} from 'node:fs';
+import {writingTelegramFixture} from './helpers/telegram-writing-fixture.mjs';
+test('operator status reads actual kinds and shows suppression holds without mutating state',()=>{
+ const path=join(mkdtempSync(join(tmpdir(),'elya-operator-')),'state.sqlite'),db=openStore(path);
+ putRecord(db,'contact','held@example.invalid',{verification:'CATCH_ALL',suppressed:false,attributionClass:'GENERAL_BUSINESS'});
+ putRecord(db,'contact','suppressed@example.invalid',{verification:'PASSED',suppressed:true,attributionClass:'GENERAL_BUSINESS'});
+ putRecord(db,'contact','attributed@example.invalid',{candidateId:'fixture',verification:'CATCH_ALL',suppressed:null});
+ putRecord(db,'refinement_current','fixture',{semanticHash:'assessment'});
+ putRecord(db,'refinement_assessment','fixture:assessment',{contacts:[{email:'attributed@example.invalid',attribution:{class:'DIRECT_PERSON'}}]});
+ putRecord(db,'writing_policy','fixture',{sequence:{cadenceApproved:false,endpointApproved:false}});
+ const before=JSON.stringify(db.prepare('SELECT * FROM records ORDER BY kind,id').all()),controlBefore=controls(db);
+ const run=spawnSync(process.execPath,['src/operator.mjs','status','--db',path],{encoding:'utf8'});
+ assert.equal(run.status,0,run.stderr);const output=JSON.parse(run.stdout);
+ assert.equal(output.contactHolds.length,3);assert.equal(output.writingPolicies.length,1);
+ assert.equal(output.contactHolds.find(c=>c.email==='attributed@example.invalid').attributionClass,'DIRECT_PERSON');
+ assert.equal(output.writingPolicies[0].cadenceApproved,false);
+ assert.equal(JSON.stringify(db.prepare('SELECT * FROM records ORDER BY kind,id').all()),before);assert.deepEqual(controls(db),controlBefore);db.close();
+});
+test('operator imports an exact local proposal without approving it, and recovery performs no dispatch',()=>{
+ const folder=mkdtempSync(join(tmpdir(),'elya-operator-')),path=join(folder,'state.sqlite');
+ const {db,spec}=writingTelegramFixture(path),before=controls(db);
+ const proposal={spec,drafts:spec.draftIds.map(id=>({id,data:JSON.parse(db.prepare("SELECT data_json FROM records WHERE kind='draft' AND id=?").get(id).data_json)}))};
+ const file=join(folder,'proposal.json');writeFileSync(file,JSON.stringify(proposal));db.close();
+ const run=spawnSync(process.execPath,['src/operator.mjs','import-drafts',file,'--db',path],{encoding:'utf8'});
+ assert.equal(run.status,0,run.stderr);assert.equal(JSON.parse(run.stdout).contentApproved,false);
+ const recovered=spawnSync(process.execPath,['src/operator.mjs','recover','--db',path],{encoding:'utf8'});
+ assert.equal(recovered.status,0,recovered.stderr);assert.deepEqual(JSON.parse(recovered.stdout).jobs,[]);
+ const reopened=openStore(path);assert.deepEqual(controls(reopened),before);reopened.close();
+});

@@ -1,0 +1,7 @@
+{
+  "name": "elya-local-foundation",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24.0.0" },
+  "scripts": { "test": "node scripts/test-offline.mjs", "test:local-evidence": "node --test --test-concurrency=4 tests/*.test.mjs", "import": "node src/cli.mjs import", "status": "node src/cli.mjs status" }
+}
