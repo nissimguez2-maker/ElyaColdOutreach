@@ -1,6 +1,6 @@
 # Project status
 
-As of November 19, 2026. Revision context: first source-only consolidation on `codex/review-baseline-2026-11-19`; exact commit is supplied with the publication request. No repository publication or provider action occurred in consolidation. This document supersedes scattered capability claims; older local reports remain historical evidence.
+As of November 19, 2026. Revision context: source-only baseline `cb8a1e620841e13c1e29ebc5f7a21262abc48824` published on `codex/review-baseline-2026-11-19` after explicit public-publication approval. GitHub independently returned the matching branch, commit and tree. A documentation-only follow-up records this approval; application source and test results are unchanged. No operational provider action occurred. This document supersedes scattered capability claims; older local reports remain historical evidence.
 
 | Capability | Implemented / local evidence | Live evidence and remaining limit |
 |---|---|---|

@@ -1,6 +1,6 @@
 # ElyaColdOutreach
 
-Local, operator-controlled preparation and review of business outreach. This repository contains the existing Node/SQLite application, synthetic tests and a sanitized evidence summary. It excludes the operator's database, raw contact lists, private replies, credentials and live authorization files. Some fixed historical resource identifiers, business references and mailboxes remain in source and assertions; this baseline is intended only for the designated private repository.
+Local, operator-controlled preparation and review of business outreach. This repository contains the existing Node/SQLite application, synthetic tests and a sanitized evidence summary. It excludes the operator's database, raw contact lists, private replies, credentials and live authorization files. Some fixed historical resource identifiers, business references and mailboxes remain in source and assertions; the operator explicitly approved public publication of this reviewed boundary on November 19, 2026.
 
 **Current safeguards:** business stopped; launch and general dispatch disabled; real contacts held; real drafts unapproved. The internal pilot and editorial evaluation are closed. Cloning, testing or publishing this code does not enable any provider operation.
 

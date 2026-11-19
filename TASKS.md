@@ -18,7 +18,7 @@ As of 2026-11-19. This is the current task list; older local milestone checklist
 
 7. **First real message:** exact attributable mailbox result and date, reconciliation with adverse evidence, explicit eligibility adoption/hold decision, current exclusion evidence, exact assembled-content approval, and bounded setup/release authority. Never repeat validation automatically. Footer, opt-out component, manual reply takeover and operator campaign control are settled.
 8. **Accounting:** provider charge evidence or explicit permitted disposition for unknown reservations; agreed project share of subscription costs. Retain the $0.15 reservation and other uncertainty meanwhile. A $20 weekday ceiling is not spending authority.
-9. **Publication:** designated repository must be private, then approve the exact prepared commit/branch write. No force push or visibility change under this task.
+9. **Publication complete:** operator explicitly approved public visibility on November 19, superseding the private-only condition. The reviewed baseline was published to `codex/review-baseline-2026-11-19` without force push or visibility change. This does not grant operational authority or permission to publish excluded records.
 
 ## Deferred
 
